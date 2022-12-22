@@ -16,7 +16,8 @@ const loader=(callBack)=>{
 // FUNCTION TO GET THE LIST OF BILLIONNAIRES
 const fetchData=()=>{
     // RETURN THE FETCH METHOD
-    return fetch('https://forbes400.herokuapp.com/api/forbes400?limit=400')
+    // return fetch('https://forbes400.herokuapp.com/api/forbes400?limit=400')
+    return fetch('https://forbes400.onrender.com/api/forbes400?limit=400')
     .then(response => response.json())
     .then(data =>{
         // POPULATET THE RESPONSE JSON DATA TO THE UI
